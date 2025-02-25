@@ -1,0 +1,167 @@
+<html>
+<head><title>Student Registration</title></head>
+<style>
+
+
+ul.navbar {
+            list-style-type: none;
+            margin: 10;
+            padding: 0;
+            background: linear-gradient(90deg, #222120,#312e26,#45423a);
+	    border-radius: 12px;
+	    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        ul.navbar li {
+            display: inline;
+        }
+
+        ul.navbar li a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        ul.navbar li a:hover {
+	    font-weight: 1000;
+	    background-color: #ffffff71; //#2c3e50;
+	    border-radius: 12px;
+        }
+
+body {
+	background-image: url('bg.jpg'); /* Replace with the correct image path */
+        background-size: cover; /* Make the image cover the entire page */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent image repetition */
+	}
+
+
+/* Form styling */
+form {
+    background-color: #ffffff71;
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Title style */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Label style */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Textarea style */
+textarea {
+    resize: vertical;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #499ff5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+</style>
+<body>
+
+<nav>
+	<ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+	        <li><a href="registration.html">Registration</a></li>
+	        <li><a href="notice.html">Notices</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>
+</ul>
+</nav>
+
+<center><form action=data method=post>
+        <h2>Student Registration Form</h2>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Select Course</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Biology">Biology</option>
+        </select>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <button type="submit" class="submit-btn" name="txtbutton">Register</button>
+    </form></center>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Notice</title>
+    <style>
+        /* Apply cyan background to the body */
+        body {
+          background-color: #0093E9;
+	  //background-color: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+	/*background-image: url('bg3.jpg'); /* Replace with the correct image path */
+            background-size: cover; /* Make the image cover the entire page */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent image repetition */ */
+        }
+
+        ul.navbar {
+            list-style-type: none;
+            margin: 10;
+            padding: 0;
+            background: linear-gradient(90deg, #222120,#312e26,#45423a);
+            border-radius: 12px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        ul.navbar li {
+            display: inline;
+        }
+
+        ul.navbar li a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        ul.navbar li a:hover {
+            font-weight: 1000;
+            background-color: #ffffff71;
+            border-radius: 12px;
+        }
+
+        .marquee-container {
+            position: absolute;
+            overflow: hidden;
+            border: 2px solid #000;
+            border-radius: 7px;
+        }
+
+        #marquee1 {
+            left: 445px;
+            top: 178px;
+            width: 417px;
+            height: 382px;
+            z-index: 0;
+            background-color: #ffffff71;
+            backdrop-filter: blur(10px);
+        }
+
+        #marquee2 {
+            left: 444px;
+            top: 144px;
+            width: 419px;
+            height: 25px;
+            background-color: #FFFF00;
+            z-index: 1;
+            border: 2px ridge #000;
+        }
+
+        .notice-text {
+            font-size: 16px;
+            font-family: 'Arial Black';
+            font-style: italic;
+            margin: 5px 0;
+        }
+
+        .notice-header {
+            font-size: 16px;
+            font-family: 'Arial Black';
+            color: #000;
+            text-align: center;
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    
+<nav>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="notice.html">Notices</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<center><div id="marquee1" class="marquee-container">
+    <marquee width="421" height="386" direction="up" scrollamount="2" scrolldelay="60">
+        <div class="notice-text">1. Mid-Semester exams starts from 3-Fabuary-2025 Monday.</div>
+	<div class="notice-text">Important Regarding Exam Students Must be Prepare of there exams</div>
+        <div class="notice-text">2. Annual sports day event scheduled for February 5th, mark your calendars!</div>
+        <div class="notice-text">3. Parent-teacher meeting on January 28th at 10 AM in the school auditorium.</div>
+        <div class="notice-text">4. New admission forms for the 2025-2026 academic year are now available online.</div>
+        <div class="notice-text">5. Students must submit their assignments by February 1st, no extensions.</div>
+        <div class="notice-text">6. School fee payment deadline for the second term: February 10th.</div>
+        <div class="notice-text">7. Dress rehearsal for the annual play will be held on February 3rd.</div>
+        <div class="notice-text">8. Lost and found items will be cleared on January 30th, claim your belongings!</div>
+        <div class="notice-text">9. Reminder: School timings have changed for the winter session until February 15th.</div>
+        <div class="notice-text">10. Volunteers needed for the upcoming community service event on February 12th.</div>
+    </marquee>
+</div></center>
+
+<center><div id="marquee2" class="marquee-container">
+    <marquee width="423" behavior="alternate" scrollamount="2" scrolldelay="60">
+        <div class="notice-header">NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE</div>
+    </marquee>
+</div>
+</center>
+
+
+</body>
+</html>
